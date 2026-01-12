@@ -1,0 +1,9 @@
+dbt_jinja:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: SILVER
+      schema: PUBLIC
