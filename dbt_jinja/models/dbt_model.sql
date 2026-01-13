@@ -4,9 +4,6 @@
     snowflake_warehouse='COMPUTE_WH'
 ) }}
 
-  with source_data as (
-      select 1 as id_anything
-  )
-
 select *
-from source_data
+from {{ ref('my_third_dbt_model') }}
+where id = 1
