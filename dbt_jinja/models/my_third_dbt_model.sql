@@ -6,5 +6,5 @@
       select null as id
   )
 
-  select *
-  from source_data
+select *
+from source_data
