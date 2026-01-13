@@ -1,4 +1,6 @@
-{{ config(materialized='dynamic') }}
+{{ config(
+    materialized="dynamic_table"
+) }}
 
   with source_data as (
       select 1 as id
